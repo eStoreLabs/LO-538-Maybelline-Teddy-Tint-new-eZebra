@@ -139,7 +139,7 @@
   }
 }
 
-@media (min-width: 576px) {
+@media (min-width: 594px) {
   #es-rc #es-rc-content .es-kv__left {
     position: absolute;
     max-width: 350px;
@@ -215,7 +215,7 @@
     left: 5%;
     right: unset;
     max-width: unset;
-    background-color: unset;
+    background-color: transparent;
   }
 
   #es-rc #es-rc-content .es-banner__text--big {
@@ -225,7 +225,6 @@
   #es-rc #es-rc-content .es-banner__text--small {
     font-size: 25px;
   }
-
 }
 
 #es-rc #es-rc-content .es-benefits {
@@ -256,6 +255,10 @@
   padding: 0px 35px 90px 35px;
 }
 
+#es-rc #es-rc-content .es-shades .es-row {
+  flex-direction: column;
+} 
+
 #es-rc #es-rc-content .es-col-2 {
   position: relative;
 }
@@ -273,6 +276,7 @@
 
 #es-rc #es-rc-content .es-shades .es-col-2 {
   padding: 10px 0;
+  width: 100%;
 }
 
 #es-rc #es-rc-content .es-shades .es-shade__pack {
@@ -287,11 +291,27 @@
   transform: scale(1.1);
 }
 
-@media (min-width: 576px) {
-  #es-rc #es-rc-content .es-shades .es-col-2 {
-    padding: 3px;
-  }
 
+@media (min-width: 680px) {
+  #es-rc #es-rc-content .es-shades .es-row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+  }
+  #es-rc #es-rc-content .es-shades .es-row .es-col-2 {
+    padding: 3px;
+    width: 20%;
+  }
+  #es-rc #es-rc-content .es-shades p {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 855px) {
+  #es-rc #es-rc-content .es-shades p {
+    font-size: 22px;
+  }
 }
 
 #es-rc #es-rc-content .es-technology {
