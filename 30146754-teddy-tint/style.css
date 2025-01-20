@@ -93,6 +93,9 @@
   top: 21%;
   left: 38%;
 }
+#es-rc #es-rc-content .es-kv__img--desktop {
+  display: none;
+}
 
 #es-rc #es-rc-content .es-kv__text {
   position: absolute;
@@ -153,6 +156,13 @@
     top: unset;
     bottom: 5%;
     left: -25px;
+  }
+
+  #es-rc #es-rc-content .es-kv__img--desktop {
+    display: block;
+  }
+  #es-rc #es-rc-content .es-kv__img--mobile {
+    display: none;
   }
 
   #es-rc #es-rc-content .es-kv__text {
